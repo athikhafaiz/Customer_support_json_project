@@ -1,0 +1,12 @@
+{
+"$schema": "http://json-schema.org/draft-07/schema#",
+"title": "Customer Support Ticket",
+"type": "object",
+"properties": {
+"ticketId": { "type": "string", "pattern": "^[A-Z0-9]{8}$" },
+"priority": { "type": "string", "enum": ["low", "medium", "high"] },
+"createdAt": { "type": "string", "format": "date-time" }
+},
+"required": ["ticketId", "priority", "createdAt"]
+}
+
